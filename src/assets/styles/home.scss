@@ -1,0 +1,97 @@
+#hero {
+  padding: 3vw 10vw;
+  min-height: 50vw;
+  background: url(../imgs/hero.jpg) bottom center no-repeat;
+  background-size: cover;
+  .inner {
+    max-width: 40%;
+    * {
+      margin-block: 10px;
+    }
+    button {
+      border: none;
+      background-color: $main;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      width: 30%;
+      min-width: 130px;
+      svg {
+        margin: 0;
+        color: $brown;
+      }
+    }
+  }
+  border-bottom-left-radius: 200px;
+}
+#work {
+  padding: 8vw;
+  .inner {
+    // width: 100%;
+    max-width: 80%;
+    .column {
+      text-align: center;
+      min-width: 200px;
+      * {
+        margin-block: 10px;
+      }
+      a {
+        gap: 15px;
+        svg {
+          color: $brown;
+        }
+      }
+    }
+  }
+}
+#about {
+  width: 100%;
+  .inner {
+    width: 80%;
+    gap: 8%;
+    .text {
+      width: 40%;
+      * {
+        margin-block: 20px;
+      }
+      h2 {
+        width: 80%;
+      }
+      .contact {
+        gap: 10px;
+        * {
+          margin: 0;
+        }
+        .phone {
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          color: $brown;
+          background-color: $grey;
+        }
+      }
+      button {
+        border: none;
+        background-color: $main;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: 40%;
+        min-width: 180px;
+        svg {
+          margin: 0;
+          color: $brown;
+        }
+      }
+    }
+    .img {
+      width: 40%;
+      overflow: hidden;
+      border-top-right-radius: 300px;
+      border-bottom-left-radius: 100px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
