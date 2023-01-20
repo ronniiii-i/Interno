@@ -243,7 +243,7 @@
         border: 1px solid $grey;
         border-radius: 50px;
         overflow: hidden;
-        padding: .4vw 1vw;
+        padding: 0.4vw 1vw;
         min-width: 20rem;
         .image {
           border-top-left-radius: 30px;
@@ -256,7 +256,7 @@
           position: relative;
           width: 100%;
           max-height: 15.5rem;
-        //   min-height: 16rem;
+          //   min-height: 16rem;
           overflow: hidden;
           img {
             width: 100%;
@@ -298,6 +298,30 @@
           }
         }
       }
+    }
+  }
+}
+#cta {
+    padding: 5vw;
+  .inner {
+    background-color: $main;
+    border-radius: 40px;
+    padding: 3vw;
+    text-align: center;
+    * {
+      color: #ffffff;
+      max-width: 60%;
+      margin-block: 5px;
+    }
+    a{
+        background-color: $brown;
+        padding: 10px 20px;
+        border-radius: 10px;
+        min-width: 150px;
+        svg{
+            margin: 0;
+            color: $main;
+        }
     }
   }
 }
