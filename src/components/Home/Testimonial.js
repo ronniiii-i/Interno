@@ -1,15 +1,17 @@
-import React from 'react'
+import t1 from '../../assets/imgs/t1.png'
+import t2 from '../../assets/imgs/t2.png'
+import t3 from '../../assets/imgs/t3.png'
 
 function Testimonial() {
   return (
-    <section id="testimonial">
+    <section id="testimonial" className='flex align-center justify-center'>
         <div className="inner">
             <h2>What People Think About Us</h2>
             <div className="row flex justify-between full-width">
                 <div className="column by-3">
-                    <div className="head">
+                    <div className="head flex justify-start align-center">
                         <div className="avatar">
-                            <img src="" alt="Avatar" />
+                            <img src={t1} alt="Avatar" />
                         </div>
                         <div className="author-details">
                             <h4>Nattasha Mith</h4>
@@ -21,9 +23,9 @@ function Testimonial() {
                     </p>
                 </div>
                 <div className="column by-3">
-                    <div className="head">
+                    <div className="head flex justify-start align-center">
                         <div className="avatar">
-                            <img src="" alt="Avatar" />
+                            <img src={t2} alt="Avatar" />
                         </div>
                         <div className="author-details">
                             <h4>Raymond Galario</h4>
@@ -35,9 +37,9 @@ function Testimonial() {
                     </p>
                 </div>
                 <div className="column by-3">
-                    <div className="head">
+                    <div className="head flex justify-start align-center">
                         <div className="avatar">
-                            <img src="" alt="Avatar" />
+                            <img src={t3} alt="Avatar" />
                         </div>
                         <div className="author-details">
                             <h4>Benny Roll</h4>

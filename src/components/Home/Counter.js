@@ -1,7 +1,7 @@
 function Counter() {
   return (
-    <section id="counter">
-        <div className="inner full-width flex justify-center">
+    <section id="counter" className="flex align-center justify-center">
+        <div className="inner full-width flex justify-center align-center">
             <div className="column">
                 <h1>12</h1>
                 <p>Years Of Experience</p>

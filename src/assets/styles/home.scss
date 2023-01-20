@@ -1,3 +1,6 @@
+.inner {
+  width: 80%;
+}
 #hero {
   padding: 3vw 10vw;
   min-height: 50vw;
@@ -91,6 +94,209 @@
       border-bottom-left-radius: 100px;
       img {
         width: 100%;
+      }
+    }
+  }
+}
+#testimonial {
+  padding: 10vw 5vw;
+  .inner {
+    background-color: $grey;
+    padding: 3vw;
+    border-radius: 20px;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .row {
+      padding-block: 20px;
+      .column {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 3vw 2vw;
+        .head {
+          gap: 5px;
+          .avatar {
+            width: 4rem;
+            height: 4rem;
+            img {
+              width: 100%;
+            }
+          }
+          p {
+            margin: 0;
+          }
+        }
+        .head,
+        p {
+          margin-block: 20px;
+        }
+      }
+    }
+  }
+}
+#clients {
+  padding: 3vw 5vw;
+  .inner {
+    img {
+      min-width: 120px;
+      max-width: 200px;
+      width: 10%;
+      height: 100%;
+    }
+  }
+}
+#projects {
+  padding: 5vw 3vw;
+  .inner {
+    .head {
+      text-align: center;
+      padding: 2vw;
+      width: 60%;
+    }
+    .projects {
+      padding: 2vw;
+      gap: 8%;
+      row-gap: 4rem;
+      .column {
+        width: 45%;
+        &:nth-child(1) .image {
+          border-top-right-radius: 50px;
+        }
+        &:nth-child(2) .image {
+          border-top-left-radius: 50px;
+        }
+        &:nth-child(3) .image {
+          border-bottom-right-radius: 50px;
+        }
+        &:nth-child(4) .image {
+          border-bottom-left-radius: 50px;
+        }
+        .image {
+          width: 100%;
+          overflow: hidden;
+          margin-block: 20px;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+        .description {
+          margin-block: 20px;
+          strong {
+            font-weight: 500;
+          }
+          p {
+            font-weight: 300;
+          }
+          svg {
+            background-color: $grey;
+            color: $main;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+#counter {
+  background-color: $grey;
+  padding: 7vw 5vw;
+  .inner {
+    .column {
+      text-align: center;
+      min-width: 200px;
+      max-width: 250px;
+      width: 100%;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        border-right: 1px solid $brown;
+      }
+      h1 {
+        color: $brown;
+      }
+    }
+  }
+}
+#blog {
+  padding: 3vw;
+  * {
+    transition: 0.5s all;
+  }
+  .inner {
+    .head {
+      width: 60%;
+      text-align: center;
+      margin-bottom: 20px;
+      * {
+        margin-block: 10px;
+      }
+    }
+    .row {
+      padding: 2vw;
+      gap: 1rem;
+      .column {
+        border: 1px solid $grey;
+        border-radius: 50px;
+        overflow: hidden;
+        padding: .4vw 1vw;
+        min-width: 20rem;
+        .image {
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // padding: 1vw;
+          position: relative;
+          width: 100%;
+          max-height: 15.5rem;
+        //   min-height: 16rem;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+          p {
+            position: absolute;
+            bottom: 2vw;
+            left: 1.5vw;
+            padding: 8px 16px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border-bottom-left-radius: 0;
+          }
+        }
+        h3 {
+          margin-block: 20px;
+        }
+        div {
+          margin-block: 20px;
+          svg {
+            background-color: $grey;
+            width: 3rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: 100%;
+          }
+        }
+        &:hover {
+          background-color: $grey;
+          .image {
+            img {
+              width: 120%;
+            }
+          }
+          div {
+            svg {
+              background-color: #ffffff;
+            }
+          }
+        }
       }
     }
   }

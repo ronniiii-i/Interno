@@ -22,6 +22,7 @@ html {
   // transition: 0.3s all;
   z-index: 0;
   font-family: $sans;
+  color: $main;
 }
 
 *,
@@ -87,13 +88,13 @@ h2 {
   font-weight: 400;
 }
 h3 {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-family: $serif;
   color: $main;
   font-weight: 400;
 }
 h4 {
-  font-size: 1.714rem;
+  font-size: 1.2rem;
   font-family: $serif;
   color: $main;
   font-weight: 400;
@@ -123,8 +124,13 @@ span,
 input,
 select,
 option,
+strong,
 a {
   font-size: .9rem;
+}
+
+strong{
+  font-family: $serif;
 }
 
 a {
