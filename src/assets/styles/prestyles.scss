@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap");
+
+/* colors */
+$main: #ede2d7;
+/*typography*/
+$serif: "STIX Two Text", serif;
+$sans: "Clash Display", sans-serif;
+$sans1: "Satoshi", sans-serif;
+$cursive: "Architects Daughter", cursive;
+
+:root {
+  /* size */
+  /* font-size: ; */
+  font-size: calc(13px + 0.390625vw);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  // transition: 0.3s all;
+  z-index: 0;
+  font-family: $sans1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::selection {
+  background-color: white;
+  color: black;
+}
+
+input:focus,
+input:active,
+input:visited,
+textarea:focus,
+textarea:active,
+textarea:visited {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #00000000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #3f3f3f8c;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: $sans;
+  font-weight: 600;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.071rem;
+}
+h4 {
+  font-size: 1.714rem;
+}
+h5 {
+  font-size: 1.429rem;
+}
+h6,
+.big {
+  font-size: 1.214rem;
+}
+.small {
+  font-size: 0.857rem;
+}
+small {
+  font-size: 0.714rem;
+}
+p,
+label,
+span,
+input,
+select,
+option,
+a {
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  font-family: "Architects Daughter", cursive;
+}
+
+img::selection {
+  background-color: #000;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.by2 {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.mar-1 {
+  margin: 1rem 0;
+}
