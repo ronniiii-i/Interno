@@ -394,6 +394,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .inner{
+    width: 100%;
+  }
   #hero {
     border-bottom-left-radius: 0;
     padding-block: 5vw;
@@ -406,6 +409,15 @@
       }
       .img {
         display: none;
+      }
+    }
+  }
+  #testimonial{
+    .inner{
+      .row{
+        .column{
+          width: 100%;
+        }
       }
     }
   }
