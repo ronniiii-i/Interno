@@ -1,0 +1,107 @@
+footer {
+  padding: 3vw 5vw 0;
+  .top {
+    padding: 1vw 3vw;
+    width: 80%;
+    row-gap: 2rem;
+    .column {
+      min-width: 150px;
+      width: 100%;
+      padding: 1vw;
+      padding-bottom: 0;
+      div,
+      h4,
+      p,
+      ul,
+      li {
+        margin-block-end: 15px;
+      }
+      *:last-child{
+        margin-bottom: 0;
+      }
+      &:nth-child(1) {
+        min-width: 250px;
+        .logo {
+          width: 100%;
+          margin: 0;
+          img {
+            min-width: 150px;
+            max-width: 180px;
+            width: 100%;
+          }
+        }
+        .socials {
+          width: 70%;
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+      &:nth-child(4) {
+        min-width: 200px;
+        a {
+          display: block;
+          margin-block-end: 15px;
+        }
+      }
+    }
+  }
+  .bottom {
+    text-align: center;
+    padding: 1vw;
+  }
+}
+@media screen and (min-width: 1137px) {
+    footer{
+        .top{
+            .column{
+                max-width: 10rem !important;
+                &:nth-child(1){
+                    max-width: 15rem !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 760px) {
+    footer{
+        .top{
+            .column{
+                max-width: 30%;
+                &:nth-child(1){
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 690px) {
+    footer{
+        .top{
+            .column{
+                max-width: 45%;
+                &:nth-child(1){
+                    max-width: 45%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 689px) {
+    footer{
+        .top{
+            justify-content: center;
+            text-align: center;
+            .column{
+                max-width: 50% !important;
+                &:nth-child(1){
+                    max-width: 100% !important;
+                    .socials{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

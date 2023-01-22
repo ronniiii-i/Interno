@@ -7,7 +7,7 @@ import classicDesign from '../../assets/imgs/05.svg'
 function Clients() {
   return (
     <section id="clients" className='flex align-center justify-center'>
-      <div className="inner flex wrap justify-between align-center">
+      <div className="inner flex wrap justify-center align-center">
         <img src={modernHome} alt="Modern Home" />
         <img src={vintageStyle} alt="Vintage Style Interior" />
         <img src={brand} alt="Brand" />

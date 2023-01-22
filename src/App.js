@@ -13,9 +13,11 @@ function App() {
   return (
     <>
       <Nav />
-      <main>
-        <Home />
-      </main>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </Router>
       <Footer />
     </>
   )

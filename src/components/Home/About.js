@@ -5,7 +5,7 @@ import about from '../../assets/imgs/about.jpg'
 function About() {
   return (
     <section id="about" className='flex align-center justify-center'>
-      <div className="inner flex justify-center align-center">
+      <div className="inner flex justify-center align-center wrap">
         <div className="text">
           <h2>
             We Create The Art Of Stylish Living Stylishly

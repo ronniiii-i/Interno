@@ -15,7 +15,7 @@ function Projects() {
             the of readable content of page lookings at its layouts points.
           </p>
         </div>
-        <div className="projects flex wrap justify-between">
+        <div className="projects flex wrap justify-center">
           <div className="column">
             <div className="image">
               <img src={pro1} alt="Project" />

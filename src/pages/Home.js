@@ -11,7 +11,7 @@ import CTA from '../components/Home/CTA'
 
 function Home() {
     return (
-        <>
+        <main>
             <Hero />
             <Work />
             <About />
@@ -21,7 +21,7 @@ function Home() {
             <Counter />
             <Blog />
             <CTA />
-        </>
+        </main>
     )
 }
 

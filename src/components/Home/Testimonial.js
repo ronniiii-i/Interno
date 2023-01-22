@@ -7,7 +7,7 @@ function Testimonial() {
     <section id="testimonial" className='flex align-center justify-center'>
         <div className="inner">
             <h2>What People Think About Us</h2>
-            <div className="row flex justify-between full-width">
+            <div className="row flex justify-center full-width wrap">
                 <div className="column by-3">
                     <div className="head flex justify-start align-center">
                         <div className="avatar">

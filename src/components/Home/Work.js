@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 function Work() {
     return (
         <section id="work" className="flex justify-center align-center">
-            <div className="inner flex wrap justify-between">
+            <div className="inner flex wrap justify-center">
                 <div className="column by-3">
                     <h3>Project Plan</h3>
                     <p>
