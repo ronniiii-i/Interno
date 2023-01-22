@@ -394,6 +394,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+  #hero {
+    border-bottom-left-radius: 0;
+    padding-block: 5vw;
+  }
   #about {
     .inner {
       // flex-direction: column-reverse;
@@ -424,11 +428,11 @@
       }
     }
   }
-  #projects{
-    .inner{
-      .projects{
+  #projects {
+    .inner {
+      .projects {
         gap: 8%;
-        .column{
+        .column {
           max-width: 45%;
         }
       }
