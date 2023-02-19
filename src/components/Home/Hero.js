@@ -9,7 +9,7 @@ function Hero() {
           There are many variations of the passages of lorem Ipsum
           from available,variations of the passages.
         </p>
-        <button className="flex align-center justify-between">Get Started <FaArrowRight /></button>
+        <button className="flex align-center justify-center">Get Started <FaArrowRight /></button>
       </div>
     </section>
   );

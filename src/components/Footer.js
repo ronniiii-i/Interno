@@ -29,7 +29,7 @@ function Footer() {
           <h4>Pages</h4>
           <ul>
             <li>
-              <a href="">About Us</a>
+              <a href="/about-us">About Us</a>
             </li>
             <li>
               <a href="">Our Projects</a>

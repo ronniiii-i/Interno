@@ -148,6 +148,23 @@ button {
   cursor: pointer;
 }
 
+button,
+.button {
+  border: none;
+  background-color: $main;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 170px;
+  max-width: 200px;
+  gap: 1rem;
+  svg {
+    margin: 0;
+    fill: $brown;
+  }
+}
+
 ul,
 ol {
   list-style: none;
@@ -167,6 +184,9 @@ img::selection {
 
 .row {
   flex-direction: row;
+}
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .wrap {
