@@ -165,7 +165,7 @@
       padding: 2vw;
       row-gap: 4rem;
       .column {
-        width: 90%;
+        width: 45%;
         &:nth-child(1) .image {
           border-top-right-radius: 3.7rem;
         }
@@ -248,21 +248,22 @@
       gap: 1rem;
       .column {
         border: 1px solid $grey;
-        border-radius: 50px;
+        border-radius: 2.5rem;
         overflow: hidden;
-        padding: 0.4vw 1vw;
+        padding: 1rem;
         min-width: 20rem;
         .image {
-          border-top-left-radius: 30px;
-          border-top-right-radius: 30px;
+          border-top-left-radius: 1.8rem;
+          border-top-right-radius: 1.8rem;
           text-align: center;
+          margin-block: 0;
           display: flex;
           align-items: center;
           justify-content: center;
           // padding: 1vw;
           position: relative;
           width: 100%;
-          max-height: 15.5rem;
+          max-height: 15rem;
           //   min-height: 16rem;
           overflow: hidden;
           img {
@@ -381,6 +382,17 @@
     }
   }
 }
+@media screen and (max-width: 742px) {
+  #blog{
+    .inner{
+      .row{
+        .column{
+          min-width: 25rem;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 833px) {
   #counter {
     .inner {
@@ -433,7 +445,7 @@
   #hero {
     justify-content: center;
     .inner {
-      max-width: 60%;
+      min-width: 60%;
       text-align: center;
       button {
         margin: auto;
@@ -441,11 +453,14 @@
     }
   }
   #projects {
-    .inner {
+    .inner {  
       .projects {
         gap: 8%;
         .column {
-          max-width: 45%;
+          min-width: 90%;
+          .image{
+            border-radius: 0!important;
+          }
         }
       }
     }

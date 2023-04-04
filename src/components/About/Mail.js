@@ -7,7 +7,7 @@ function Mail() {
         <div className="inner">
             <h2>Creative project? Let's have a productive talk.</h2>
             <form>
-                <div className="row flex align-center justify-center">
+                <div className="row flex align-center justify-center full-width wrap">
                     <input type="text" placeholder="Name" />
                     <input type="text" placeholder="Email" />
                 </div>

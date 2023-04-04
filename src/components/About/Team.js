@@ -14,10 +14,10 @@ function Team() {
     <section id="team">
       <div className="inner">
         <h2>What the People Thinks About Us</h2>
-        <div className="row">
+        <div className="row flex justify-center align-center wrap">
           <div className="person">
             <img src={levi} alt="Levi Smith" />
-            <div className="details">
+            <div className="details flex column align-center justify-center">
               <div className="top">
                 <h3>Levi Smith</h3>
                 <p>Sydney, Australia</p>
@@ -36,7 +36,7 @@ function Team() {
           </div>
           <div className="person">
             <img src={nat} alt="Nattasha Julie" />
-            <div className="details">
+            <div className="details flex column align-center justify-center">
               <div className="top">
                 <h3>Nattasha Julie</h3>
                 <p>Sydney, Australia</p>
@@ -57,7 +57,7 @@ function Team() {
           </div>
           <div className="person">
             <img src={john} alt="John Wright" />
-            <div className="details">
+            <div className="details flex column align-center justify-center">
               <div className="top">
                 <h3>John Wright</h3>
                 <p>Sydney, Australia</p>
@@ -78,7 +78,7 @@ function Team() {
           </div>
           <div className="person">
             <img src={nora} alt="Nora Owen" />
-            <div className="details">
+            <div className="details flex column align-center justify-center">
               <div className="top">
                 <h3>Nora Owen</h3>
                 <p>Sydney, Australia</p>
