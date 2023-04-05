@@ -7,7 +7,7 @@ import Clients from '../components/Home/Clients'
 import Projects from '../components/Home/Projects'
 import Counter from '../components/Home/Counter'
 import Blog from '../components/Home/Blog'
-import CTA from '../components/Home/CTA'
+import CTA from '../components/CTA'
 
 function Home() {
     return (

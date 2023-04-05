@@ -32,7 +32,7 @@ function Nav() {
               <a href="/about-us">Pages</a>
             </li>
             <li>
-              <a href="">Services</a>
+              <a href="/services">Services</a>
             </li>
             <li>
               <a href="">Project</a>

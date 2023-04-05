@@ -5,7 +5,7 @@ function Banner() {
         <div className="inner">
           <h2>About Us</h2>
           <p>
-            <a href="/">Home</a> / <a href="/about-us">About US</a>
+            <a href="/">Home</a> / <a href="/about-us">About Us</a>
           </p>
         </div>
       </section>
