@@ -112,3 +112,24 @@
         }
     }
 }
+@media screen and (max-width: 800px) {
+    #hww{
+        .inner{
+            .the_hows{
+                .row.flex{
+                    .text{
+                        .row.flex svg{
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    #hww .inner{
+        width: 100%;
+        border-radius: 0;
+    }
+}
