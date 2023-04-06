@@ -1,4 +1,4 @@
-import Banner from '../components/Services/Banner'
+import Banner from '../components/Banner'
 import Works from '../components/Services/Services'
 import HWW from '../components/Services/HWW'
 import CTA from '../components/CTA'
@@ -6,7 +6,7 @@ import CTA from '../components/CTA'
 const Services = () => {
   return (
     <main className='service-page'>
-      <Banner />
+      <Banner url="/services" name="Services" title="Services" classn="services" />
       <Works />
       <HWW />
       <CTA />
