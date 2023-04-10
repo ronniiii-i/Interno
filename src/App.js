@@ -4,6 +4,7 @@ import NotFound from './components/NotFound'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
+import Projects from './pages/Projects.js'
 import Pricing from './pages/Pricing'
 
 import {
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/about-us" element={<About />} />
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/pricing" element={<Pricing />} />
+          <Route exact path="/projects" element={<Projects />} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </Router>

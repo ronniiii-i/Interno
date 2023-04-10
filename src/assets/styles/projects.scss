@@ -1,0 +1,122 @@
+#banner.projects {
+  background: url("https://res.cloudinary.com/qaz2dc/image/upload/v1680811772/Interno/Project/banner_lgcgay.jpg")
+    center;
+}
+#projects {
+  .inner {
+    margin: auto;
+    .select {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      border: 1px solid $brown;
+      border-radius: 1rem;
+      margin-block: 2rem;
+      ul {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        li {
+          width: 25%;
+          border-radius: 10px;
+          a {
+            display: block;
+            padding: 10px 20px;
+            // text-align: center;
+            transition: 0.5s;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          &.active a {
+            color: white;
+          }
+          &.slide {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $brown;
+            z-index: -1;
+            transition: 0.5s;
+            opacity: 0;
+          }
+          &:nth-child(1).active ~ .slide {
+            left: 0;
+            opacity: 1;
+          }
+          &:nth-child(2).active ~ .slide {
+            left: 25%;
+            opacity: 1;
+          }
+          &:nth-child(3).active ~ .slide {
+            left: 50%;
+            opacity: 1;
+          }
+          &:nth-child(4).active ~ .slide {
+            left: 75%;
+            opacity: 1;
+          }
+        }
+      }
+      select {
+        display: none;
+      }
+    }
+    .content {
+      gap: 1rem 2%;
+      .card {
+        height: fit-content;
+        width: 45%;
+        min-width: 300px;
+        .image {
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .fit {
+        margin-top: -25.5%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 814px) {
+  #projects .inner .content {
+    .card {
+      width: 60%;
+    }
+    .fit {
+      margin-top: 0;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  #projects .inner .select {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  #projects .inner .select {
+    overflow: hidden;
+    width: fit-content;
+    padding: .5rem 1rem;
+    margin-top: 0;
+    position: sticky;
+    top: 5.5rem;
+    right: 50px;
+    z-index: 2;
+    ul {
+      display: none;
+    }
+    select {
+      display: block;
+      width: fit-content;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
