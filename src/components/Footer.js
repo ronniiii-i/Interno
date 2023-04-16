@@ -32,7 +32,7 @@ function Footer() {
               <a href="/about-us">About Us</a>
             </li>
             <li>
-              <a href="">Our Projects</a>
+              <a href="/projects">Our Projects</a>
             </li>
             <li>
               <a href="">Our Team</a>
@@ -78,8 +78,7 @@ function Footer() {
       </div>
       <div className="bottom">
         <p>
-          Copyright © Interno | Designed by Victorflow Templates - Powered by
-          Webflow
+          Copyright © Interno | Designed by Victorflow Templates
         </p>
       </div>
     </footer>

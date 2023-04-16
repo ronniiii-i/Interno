@@ -4,6 +4,8 @@ import Banner from "../components/Banner";
 import Card from "../components/Projects/Project_Card";
 import bathroom from "../assets/data/projects_bathroom";
 import bedroom from "../assets/data/projects_bedroom";
+import kitchen from "../assets/data/projects_kitchen";
+import living from "../assets/data/projects_living";
 
 function Projects() {
   const [activeLink, setActiveLink] = useState(1);
@@ -42,9 +44,9 @@ function Projects() {
     } else if (activeLink === 1) {
       data = bedroom;
     } else if (activeLink === 2) {
-      data = bedroom;
+      data = kitchen;
     } else if (activeLink === 3) {
-      data = bedroom;
+      data = living;
     }
 
     setTimeout(() => {

@@ -1,16 +1,16 @@
 export default [
     {
         'id': 1,
-        'title': 'Minimal Bedroom',
+        'title': 'Minimal Bedroom Table',
         'text': 'Decor / Architecture',
-        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-7_mmvqmu.png',
+        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-3_dkggl8.png',
         'class': ''
     },
     {
         'id': 2,
-        'title': 'Minimal Bedroom',
+        'title': 'Mordern Bedroom',
         'text': 'Decor / Architecture',
-        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-6_lgpor6.png',
+        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811932/Interno/Project/Photo-1_fw6uk5.png',
         'class': ''
     },
     {
@@ -22,16 +22,16 @@ export default [
     },
     {
         'id': 4,
-        'title': 'Mordern Bedroom',
+        'title': 'Minimal Bedroom',
         'text': 'Decor / Architecture',
-        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-4_obshp8.png',
+        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-7_mmvqmu.png',
         'class': 'fit'
     },
     {
         'id': 5,
-        'title': 'Minimal Bedroom Table',
+        'title': 'Mordern Bedroom',
         'text': 'Decor / Architecture',
-        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-3_dkggl8.png',
+        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-4_obshp8.png',
         'class': ''
     },
     {
@@ -43,9 +43,9 @@ export default [
     },
     {
         'id': 7,
-        'title': 'Mordern Bedroom',
+        'title': 'Minimal Bedroom',
         'text': 'Decor / Architecture',
-        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811932/Interno/Project/Photo-1_fw6uk5.png',
+        'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-6_lgpor6.png',
         'class': ''
     },
     {
