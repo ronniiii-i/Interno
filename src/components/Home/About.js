@@ -7,6 +7,7 @@ function About() {
     <section id="about" className='flex align-center justify-center'>
       <div className="inner flex justify-center align-center wrap">
         <div className="text">
+          <div className="widget">
           <h2>
             We Create The Art Of Stylish Living Stylishly
           </h2>
@@ -21,6 +22,7 @@ function About() {
             </div>
           </div>
           <button className="flex justify-between align-center">Get Free estimate <FaArrowRight /></button>
+          </div>
         </div>
         <div className="img">
           <img src={about} alt="Interno Modern Kitchen" />
