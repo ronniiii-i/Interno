@@ -267,3 +267,25 @@
     }
   }
 }
+@media screen and (max-width: 1180px) and (max-height: 820px) {
+  #team .inner .row.flex .person{
+    img{
+      transform: translateY(-10px);
+      // width: 90%;
+    }
+    .details{
+      opacity: 1;
+      inset: auto 0 0 0;
+      padding: 0;
+      div{
+        margin-block: .7rem;
+      }
+      .socials *{
+        margin-block: 0;
+      }
+    }
+    &:hover {
+      outline: none;
+    }
+  }
+}
