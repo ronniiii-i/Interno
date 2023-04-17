@@ -2,6 +2,7 @@ export default [
     {
         'id': 1,
         'title': 'Mordern Bedroom',
+        // 'slug': '',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-4_obshp8.png',
         'class': ''

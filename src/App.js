@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Projects from './pages/Projects.js'
+import ProjectDetails from './pages/Project_Details'
 import Pricing from './pages/Pricing'
 
 import {
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/pricing" element={<Pricing />} />
           <Route exact path="/projects" element={<Projects />} />
+          <Route path="/projects/:category/:slug" element={<ProjectDetails />} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </Router>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import { Link, useNavigate } from "react-router-dom";
 
 import Banner from "../components/Banner";
 import Card from "../components/Projects/Project_Card";
@@ -11,25 +12,30 @@ function Projects() {
   const [activeLink, setActiveLink] = useState(1);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  const [selectedOption, setSelectedOption] = useState("Bedroom");
+  const [selectedOption, setSelectedOption] = useState("bedroom");
+
+  // const navigate = useNavigate();
+
+  const options = ["bathroom", "bedroom", "kitchen", "livingarea"];
 
   const handleLinkClick = (index) => {
     setActiveLink(index);
+    setSelectedOption(options[index]);
   };
 
   const handleSelectChange = (event) => {
     setSelectedOption(event.target.value);
     switch (event.target.value) {
-      case "Bathroom":
+      case "bathroom":
         setActiveLink(0);
         break;
-      case "Bedroom":
+      case "bedroom":
         setActiveLink(1);
         break;
-      case "Kitchen":
+      case "kitchen":
         setActiveLink(2);
         break;
-      case "Living Area":
+      case "living-area":
         setActiveLink(3);
         break;
       default:
@@ -98,10 +104,10 @@ function Projects() {
               value={selectedOption}
               onChange={handleSelectChange}
             >
-              <option value="Bathroom">Bathroom</option>
-              <option value="Bedroom">Bedroom</option>
-              <option value="Kitchen">Kitchen</option>
-              <option value="Living Area">Living Area</option>
+              <option value="bathroom">Bathroom</option>
+              <option value="bedroom">Bedroom</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="living-area">Living Area</option>
             </select>
           </div>
           <div className="content flex justify-center  wrap">
@@ -110,7 +116,7 @@ function Projects() {
             ) : (
               <>
                 {data.map((item) => (
-                  <Card key={item.id} details={item} />
+                    <Card key={item.id} details={item} subURL={selectedOption} />
                 ))}
               </>
             )}
