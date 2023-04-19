@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/pricing" element={<Pricing />} />
           <Route exact path="/projects" element={<Projects />} />
-          <Route path="/projects/:category/:slug" element={<ProjectDetails />} />
+          <Route path="/projects/:category/:itemId" element={<ProjectDetails />} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </Router>
