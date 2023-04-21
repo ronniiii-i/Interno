@@ -1,5 +1,4 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
 import { MdOutlineSearch } from "react-icons/md";
 import { useParams } from "react-router-dom";
 
@@ -9,22 +8,22 @@ import kitchen from "../assets/data/projects_kitchen";
 import living from "../assets/data/projects_living";
 
 function Project_Details() {
-  const { category, itemId } = useParams();
-  console.log(category, itemId, typeof itemId);
+  const { category, slug } = useParams();
+  console.log(category, slug, typeof slug);
   let projectData = "";
 
   switch (category) {
     case "bathroom":
-      projectData = bathroom.find((item) => item.id == itemId);
+      projectData = bathroom.find((item) => item.slug === slug);
       break;
     case "bedroom":
-      projectData = bedroom.find((item) => item.id == itemId);
+      projectData = bedroom.find((item) => item.slug === slug);
       break;
     case "kitchen":
-      projectData = kitchen.find((item) => item.id == itemId);
+      projectData = kitchen.find((item) => item.slug === slug);
       break;
     case "living":
-      projectData = living.find((item) => item.id == itemId);
+      projectData = living.find((item) => item.slug === slug);
       break;
     default:
       projectData = null;

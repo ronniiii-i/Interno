@@ -2,105 +2,105 @@ export default [
     {
         'id': 1,
         'title': 'Minimal Bedroom Table',
-        'slug': '',
+        'slug': 'minimal-bedroom-table-03',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-3_dkggl8.png',
         'class': '',
-        'clientName': '',
+        'clientName': 'Dan Way',
         'category': 'Interior',
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
     {
         'id': 2,
         'title': 'Mordern Bedroom',
-        'slug': '',
+        'slug': 'mordern-bedroom-07',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811932/Interno/Project/Photo-1_fw6uk5.png',
         'class': '',
-        'clientName': '',
+        'clientName': 'Alex Rim',
         'category': 'Interior',
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
     {
         'id': 3,
         'title': 'Classic Minimal Bedroom',
-        'slug': '',
+        'slug': 'classic-minimal-bedroom-03',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-5_jntibq.png',
         'class': '',
-        'clientName': '',
+        'clientName': 'Tee Rock',
         'category': 'Interior',
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
     {
         'id': 4,
         'title': 'Minimal Bedroom',
-        'slug': '',
+        'slug': 'minimal-bedroom-05',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-7_mmvqmu.png',
         'class': 'fit',
-        'clientName': '',
+        'clientName': 'Kipper Smith',
         'category': 'Interior',
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
     {
         'id': 5,
         'title': 'Mordern Bedroom',
-        'slug': '',
+        'slug': 'mordern-bedroom-08',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-4_obshp8.png',
         'class': '',
-        'clientName': '',
+        'clientName': 'Indie Affleck',
         'category': 'Interior',
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
     {
         'id': 6,
         'title': 'System Table',
-        'slug': '',
+        'slug': 'system-table-03',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-2_tnr9fq.png',
         'class': '',
-        'clientName': '',
+        'clientName': 'John Doe',
         'category': 'Interior',
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
     {
         'id': 7,
         'title': 'Minimal Bedroom',
-        'slug': '',
+        'slug': 'minimal-bedroom-06',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811933/Interno/Project/Photo-6_lgpor6.png',
         'class': '',
-        'clientName': '',
+        'clientName': 'Natalie Flo',
         'category': 'Interior',
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
     {
         'id': 8,
         'title': 'Mordern Bedroom',
-        'slug': '',
+        'slug': 'mordern-bedroom-09',
         'text': 'Decor / Architecture',
         'url': 'https://res.cloudinary.com/qaz2dc/image/upload/v1680811931/Interno/Project/Photo_fghont.png',
         'class': 'fit',
@@ -109,6 +109,6 @@ export default [
         'tags': ['interior','home'],
         'pageLink': 'https://example.com',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo. \n In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.',
-        'date': ''
+        'date': '12/03/2023'
     },
 ]
