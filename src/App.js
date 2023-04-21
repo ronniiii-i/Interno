@@ -4,7 +4,7 @@ import NotFound from './components/NotFound'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
-import Projects from './pages/Projects.js'
+import Projects from './pages/Projects'
 import ProjectDetails from './pages/Project_Details'
 import Pricing from './pages/Pricing'
 
