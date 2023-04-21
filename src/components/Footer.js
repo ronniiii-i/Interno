@@ -49,19 +49,16 @@ function Footer() {
           <h4>Services</h4>
           <ul>
             <li>
-              <a href="">Kitchan</a>
+              <a href="/projects/kitchen">Kitchan</a>
             </li>
             <li>
-              <a href="">Living Area</a>
+              <a href="/projects/living-area">Living Area</a>
             </li>
             <li>
-              <a href="">Bathroom</a>
+              <a href="/projects/bathroom">Bathroom</a>
             </li>
             <li>
-              <a href="">Dinning Hall</a>
-            </li>
-            <li>
-              <a href="">Bedroom</a>
+              <a href="/projects/bedroom">Bedroom</a>
             </li>
           </ul>
         </div>

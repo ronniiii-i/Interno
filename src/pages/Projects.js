@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { Link, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import Banner from "../components/Banner";
 import Card from "../components/Projects/Project_Card";
@@ -14,7 +14,27 @@ function Projects() {
   const [data, setData] = useState([]);
   const [selectedOption, setSelectedOption] = useState("bedroom");
 
-  // const navigate = useNavigate();
+  const { category } = useParams();
+  console.log(category);
+
+  if (category) {
+    switch (category) {
+      case "bathroom":
+        setActiveLink(0);
+        break;
+      case "bedroom":
+        setActiveLink(1);
+        break;
+      case "kitchen":
+        setActiveLink(2);
+        break;
+      case "living-area":
+        setActiveLink(3);
+        break;
+      default:
+        setActiveLink(1);
+    }
+  }
 
   const options = ["bathroom", "bedroom", "kitchen", "livingarea"];
 
@@ -116,7 +136,7 @@ function Projects() {
             ) : (
               <>
                 {data.map((item) => (
-                    <Card key={item.id} details={item} subURL={selectedOption} />
+                  <Card key={item.id} details={item} subURL={selectedOption} />
                 ))}
               </>
             )}
