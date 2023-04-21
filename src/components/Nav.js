@@ -29,7 +29,7 @@ function Nav() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about-us">Pages</a>
+              <a href="/about-us">About</a>
             </li>
             <li>
               <a href="/services">Services</a>
