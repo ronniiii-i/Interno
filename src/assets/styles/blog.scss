@@ -1,0 +1,125 @@
+#banner.blog {
+  background: url("https://res.cloudinary.com/qaz2dc/image/upload/v1682201537/Interno/Blog/banner_kzzveg.jpg")
+    center;
+  background-size: cover;
+}
+.inner {
+  margin: auto;
+}
+#latest {
+  padding: 2vw;
+  .inner {
+    // width: 70%;
+    padding: 2vw;
+    h2 {
+      padding-block: 1rem;
+    }
+    .widget {
+      border-radius: 2rem;
+      border: 1px solid $grey;
+      padding: 1rem;
+      gap: 4%;
+      row-gap: 3rem;
+      .img {
+        width: 48%;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        max-height: 365px;
+        position: relative;
+        min-width: 250px;
+        img {
+          object-fit: cover;
+          width: 121%;
+          transition: all 0.5s;
+        }
+        .overlay {
+          position: absolute;
+          inset: 0;
+          transition: all 0.5s;
+        }
+        &:hover {
+          img {
+            width: 128%;
+          }
+          .overlay {
+            background-color: #00000052;
+          }
+        }
+      }
+      .text {
+        width: 48%;
+        min-width: 250px;
+        h4,
+        p > div,
+        div {
+          margin-block: 1.5rem;
+          transition: all 0.5s;
+        }
+        svg {
+          width: 35px;
+          height: 35px;
+          padding: 10px;
+          background-color: $grey;
+          border-radius: 100%;
+          transition: all 0.5s;
+          path {
+            transform: translateX(20px);
+          }
+        }
+        a:hover {
+          text-decoration: none;
+          h4 {
+            color: $brown;
+          }
+          svg {
+            background-color: $brown;
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+}
+#latest ~ #blog {
+  .inner {
+    .row {
+      .column {
+        .image {
+          height: 13rem;
+          img {
+            object-fit: cover;
+            width: 130%;
+          }
+          &:hover {
+            img {
+              width: 140%;
+            }
+          }
+        }
+        a {
+            display: block;
+          &:hover {
+            text-decoration: none;
+            h3 {
+              color: $brown;
+            }
+            svg{
+                fill: $brown;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 721px) {
+  #latest .inner {
+    .widget {
+      .img,
+      .text {
+        min-width: 100%;
+      }
+    }
+  }
+}
