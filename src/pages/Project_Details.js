@@ -14,7 +14,7 @@ function Project_Details() {
 
   switch (category) {
     case "bathroom":
-      projectData = bathroom.find((item) => item.slug === slug);
+        projectData = bathroom.find((item) => item.slug === slug);
       break;
     case "bedroom":
       projectData = bedroom.find((item) => item.slug === slug);

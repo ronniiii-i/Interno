@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 import Banner from "../components/Banner";
 import Card from "../components/Blog/Card";
+import Paginate from "../components/Blog/Paginate";
 
 function Blog() {
   const [data, setData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(7);
+  const [selectedPage, setSelectedPage] = useState(1);
 
   useEffect(() => {
     fetch("https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts")
@@ -20,6 +24,28 @@ function Blog() {
       })
       .catch((error) => console.error(error));
   }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    setSelectedPage(pageNumber);
+  };
+  const previousPage = () => {
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1);
+      setSelectedPage(currentPage - 1);
+    }
+  };
+
+  const nextPage = () => {
+    if (currentPage !== Math.ceil(data.length / postsPerPage)) {
+      setCurrentPage(currentPage + 1);
+      setSelectedPage(currentPage + 1);
+    }
+  };
 
   return (
     <main>
@@ -69,7 +95,7 @@ function Blog() {
             <h2>Articles & News</h2>
           </div>
           <div className="row flex justify-center wrap">
-            {data.slice(1).map((item) => (
+            {currentPosts.slice(1).map((item) => (
               // <div key={item.uuid}>
               //   <h4>{item.post_title}</h4>
               //   <p>{item.desc}</p>
@@ -79,6 +105,14 @@ function Blog() {
           </div>
         </div>
       </section>
+      <Paginate
+        postsPerPage={postsPerPage}
+        totalPosts={data.length}
+        paginate={paginate}
+        previousPage={previousPage}
+        nextPage={nextPage}
+        selectedPage={selectedPage}
+      />
     </main>
   );
 }

@@ -97,17 +97,66 @@
           }
         }
         a {
-            display: block;
+          display: block;
           &:hover {
             text-decoration: none;
             h3 {
               color: $brown;
             }
-            svg{
-                fill: $brown;
+            svg {
+              fill: $brown;
             }
           }
         }
+      }
+    }
+  }
+}
+
+// width: 100%;
+.pagination {
+  margin: auto;
+  width: fit-content;
+  li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 100%;
+    border: 1px solid $brown;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    a {
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    &.selected {
+      background-color: $brown;
+      color: white;
+      a {
+        color: white;
+      }
+    }
+    svg {
+      transition: all 0.5s;
+    }
+    &:hover {
+      background-color: $brown;
+      color: white;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      svg {
+        fill: white;
       }
     }
   }
