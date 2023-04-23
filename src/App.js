@@ -1,5 +1,6 @@
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import NotFound from './components/NotFound'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -21,6 +22,7 @@ function App() {
     <>
       <Nav />
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about-us" element={<About />} />
