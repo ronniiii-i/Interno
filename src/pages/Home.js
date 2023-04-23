@@ -11,7 +11,7 @@ import CTA from '../components/CTA'
 
 function Home() {
     return (
-        <main>
+        <main id='home'>
             <Hero />
             <Work />
             <About />
