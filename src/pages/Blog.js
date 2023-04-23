@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ColorRing, TailSpin, ThreeCircles } from "react-loader-spinner";
+import { ThreeCircles } from "react-loader-spinner";
 import { FaChevronRight } from "react-icons/fa";
 import Banner from "../components/Banner";
 import Card from "../components/Blog/Card";

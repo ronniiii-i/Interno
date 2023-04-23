@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { ThreeCircles } from "react-loader-spinner";
 
 import Banner from "../components/Banner";
 import Card from "../components/Projects/Project_Card";
@@ -65,6 +66,7 @@ function Projects() {
 
   useEffect(() => {
     let data;
+    setLoading(true);
     if (activeLink === 0) {
       data = bathroom;
     } else if (activeLink === 1) {
@@ -75,10 +77,13 @@ function Projects() {
       data = living;
     }
 
-    setTimeout(() => {
-      setData(data);
+    setData(data);
+    
+    const timeout = setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 1500);
+
+    return () => clearTimeout(timeout);
   }, [activeLink]);
 
   return (
@@ -132,7 +137,18 @@ function Projects() {
           </div>
           <div className="content flex justify-center  wrap">
             {loading ? (
-              <div className="loader">Loading...</div>
+              <ThreeCircles
+                height="100"
+                width="100"
+                color="#CDA274"
+                wrapperStyle={{}}
+                wrapperClass="loader"
+                visible={true}
+                ariaLabel="three-circles-rotating"
+                outerCircleColor=""
+                innerCircleColor=""
+                middleCircleColor=""
+              />
             ) : (
               <>
                 {data.map((item) => (
