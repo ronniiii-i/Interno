@@ -3,12 +3,15 @@
     center;
   background-size: cover;
 }
-.inner {
-  margin: auto;
-  .loader {
-    margin: 2rem;
-    svg {
-      margin: auto;
+#latest,
+#blog {
+  .inner {
+    margin: auto;
+    .loader {
+      margin: 2rem;
+      svg {
+        margin: auto;
+      }
     }
   }
 }

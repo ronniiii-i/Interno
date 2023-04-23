@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Projects from './pages/Projects'
 import Blog from './pages/Blog'
 import ProjectDetails from './pages/Project_Details'
+import Blog_Details from './pages/Blog_Details'
 import Pricing from './pages/Pricing'
 
 import {
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/projects/bedroom" element={<Projects />} />
           <Route path="/projects/:category/:slug" element={<ProjectDetails />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<Blog_Details />} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
       </Router>

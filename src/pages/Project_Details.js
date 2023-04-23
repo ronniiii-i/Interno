@@ -9,7 +9,6 @@ import living from "../assets/data/projects_living";
 
 function Project_Details() {
   const { category, slug } = useParams();
-  console.log(category, slug, typeof slug);
   let projectData = "";
 
   switch (category) {
