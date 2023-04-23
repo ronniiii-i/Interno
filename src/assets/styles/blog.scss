@@ -5,6 +5,12 @@
 }
 .inner {
   margin: auto;
+  .loader {
+    margin: 2rem;
+    svg {
+      margin: auto;
+    }
+  }
 }
 #latest {
   padding: 2vw;
@@ -119,7 +125,7 @@
 
 // width: 100%;
 #pagination-container {
-    padding: 2vw;
+  padding: 2vw;
   .pagination {
     margin: auto;
     width: fit-content;
