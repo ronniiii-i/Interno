@@ -17,7 +17,7 @@ const Paginate = ({
 
   return (
     <div id="pagination-container">
-      <ul className="pagination flex align-center justify-center">
+      <ul className="pagination flex align-center justify-between">
         <li onClick={previousPage} className="page-number">
           <FaChevronLeft />
         </li>

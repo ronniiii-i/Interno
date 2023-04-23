@@ -20,11 +20,14 @@
       padding: 1rem;
       gap: 4%;
       row-gap: 3rem;
+      position: relative;
       .img {
         width: 48%;
         border-radius: 1.5rem;
         overflow: hidden;
-        max-height: 365px;
+        // max-height: 30rem;
+        height: inherit;
+        // max-height: 100%;
         position: relative;
         min-width: 250px;
         img {
@@ -39,7 +42,7 @@
         }
         &:hover {
           img {
-            width: 128%;
+            // width: 128%;
           }
           .overlay {
             background-color: #00000052;
@@ -85,14 +88,15 @@
     .row {
       .column {
         .image {
-          height: 13rem;
+          height: 50%;
           img {
             object-fit: cover;
-            width: 130%;
+            width: 135%;
+            cursor: pointer;
           }
           &:hover {
             img {
-              width: 140%;
+              width: 145%;
             }
           }
         }
@@ -114,49 +118,54 @@
 }
 
 // width: 100%;
-.pagination {
-  margin: auto;
-  width: fit-content;
-  li {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    // padding: 1rem;
-    margin: 0 1rem;
-    border-radius: 100%;
-    border: 1px solid $brown;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    transition: all 0.5s;
-    a {
-      width: 100%;
-      height: 100%;
+#pagination-container {
+    padding: 2vw;
+  .pagination {
+    margin: auto;
+    width: fit-content;
+    width: 100%;
+    max-width: 30rem;
+    li {
       display: inline-flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-    }
-    &.selected {
-      background-color: $brown;
-      color: white;
-      a {
-        color: white;
-      }
-    }
-    svg {
+      // padding: 1rem;
+      // margin: 0 1rem;
+      border-radius: 100%;
+      border: 1px solid $brown;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
       transition: all 0.5s;
-    }
-    &:hover {
-      background-color: $brown;
-      color: white;
       a {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      &.selected {
+        background-color: $brown;
         color: white;
-        text-decoration: none;
+        a {
+          color: white;
+        }
       }
       svg {
-        fill: white;
+        transition: all 0.5s;
+      }
+      &:hover {
+        background-color: $brown;
+        color: white;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        svg {
+          fill: white;
+        }
       }
     }
   }

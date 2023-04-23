@@ -1,16 +1,17 @@
 import { FaChevronRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Card({ details }) {
+  const navigate = useNavigate();
+
+  const openPost = () => {
+    navigate(`/blog/${details.slug}`)
+  }
+
   return (
     <div className="column by-3">
       <div className="image">
-        <Link
-          to={`/blog/${details.slug}`}
-          className="flex justify-between align-center full-width"
-        >
-          <img src={details.img_url} alt={details.post_title} />
-        </Link>
+        <img src={details.img_url} alt={details.post_title} onClick={openPost} />
         <p>{details.category}</p>
       </div>
       <Link to={`/blog/${details.slug}`}>
