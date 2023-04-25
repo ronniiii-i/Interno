@@ -13,28 +13,31 @@ function Blog() {
   const [selectedPage, setSelectedPage] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    fetch("https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts")
-      .then((response) => response.json())
-      .then((data) => {
-        // Sort data by date in descending order
-        data.sort((a, b) => new Date(b.date) - new Date(a.date));
-        // Remove the first item from the array
-        // const filteredData = data.slice(1);
-        // Set component state with the filtered data
-        setData(data);
-        setIsLoading(false);
-      })
-      .catch((error) => console.error(error));
-  }, []);
-
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
 
+  useEffect(() => {
+    setIsLoading(true);
+    const start = (currentPage - 1) * postsPerPage;
+    const end = start + postsPerPage;
+    const url = `https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts?_start=${start}&_end=${end}`;
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        // Sort data by date in descending order
+        data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        setData(data);
+        setIsLoading(false);
+      })
+      .catch((error) => console.error(error));
+  }, [currentPage, postsPerPage]);
+  
+
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
     setSelectedPage(pageNumber);
+    window.scrollTo(0, 0);
   };
   const previousPage = () => {
     if (currentPage !== 1) {

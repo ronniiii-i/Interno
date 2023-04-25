@@ -21,6 +21,12 @@ function Blog_Details() {
       .catch((error) => console.error(error));
   }, []);
 
+//   const elements = data.tags.map((element, index) =>
+//     <span key={index}>
+//       {element}{index < data.tags.length - 1 ? '/' : ''}
+//     </span>
+//   );
+
   return (
     <>
       <header></header>
@@ -34,7 +40,7 @@ function Blog_Details() {
                 </div>
                 <div className="flex align-center justify-between">
                     <a href={`/blog/date/${data.date}`}>{data.date}</a>
-                    {data.tags.map}
+                    {/* {data.tags.toLocaleString()} */}
                 </div>
             </article>
           </section>
