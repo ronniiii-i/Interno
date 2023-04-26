@@ -73,7 +73,11 @@ textarea::placeholder {
 }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-inner-spin-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -101,20 +105,20 @@ h3 {
   font-weight: 400;
 }
 h4, .h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: $serif;
   color: $main;
   font-weight: 400;
 }
 h5 {
-  font-size: 1.429rem;
+  font-size: 1.1rem;
   font-family: $serif;
   color: $main;
   font-weight: 400;
 }
 h6,
 .big {
-  font-size: 1.214rem;
+  font-size: 1rem;
   font-family: $serif;
   color: $main;
   font-weight: 400;
@@ -223,6 +227,15 @@ img::selection {
 
 .column {
   flex-direction: column;
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-equal-cols-2{
+  grid-template-columns: 48% 48%;
+  gap: 4%;
 }
 
 .align-center {

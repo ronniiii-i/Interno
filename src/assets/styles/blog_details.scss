@@ -1,0 +1,280 @@
+section.blog_details {
+  padding: calc(2rem + 5vw);
+  margin-bottom: 2rem;
+  width: 100%;
+  background: url("https://res.cloudinary.com/qaz2dc/image/upload/v1682529756/Interno/Blog/Photo_1_gtevv4.jpg")
+    center;
+  background-size: cover;
+}
+.blog_details.inner {
+  position: relative;
+  margin: 5vw auto;
+  gap: 5%;
+  .loader {
+    svg {
+      margin: 2rem auto;
+    }
+  }
+  main {
+    width: 65%;
+    min-width: 350px;
+    #post {
+      article {
+        h2,
+        .image,
+        .flex.justify-between,
+        .post_end {
+          margin-block: 1.5rem;
+        }
+        .image {
+          overflow: hidden;
+          border-radius: 3rem;
+          img {
+            width: 100%;
+          }
+        }
+        .post {
+          h3 {
+            margin-block: 1rem;
+          }
+          blockquote {
+            background-color: $grey;
+            padding: 3vw;
+            text-align: center;
+            margin-block: 1rem;
+            border-radius: 3rem;
+            width: 100%;
+            q,
+            cite {
+              display: block;
+            }
+            q {
+              color: $brown;
+              font-family: $serif;
+              font-style: italic;
+              font-weight: 200;
+              font-size: 1.3rem;
+              &::before {
+                display: block;
+                content: url("https://res.cloudinary.com/qaz2dc/image/upload/v1682536606/Interno/Blog/afw6cpfhquqlvco7o9n8.png");
+                padding: 1vw;
+              }
+            }
+            cite {
+              font-family: $serif;
+              // color: ;
+              font-weight: 100;
+              font-style: normal;
+              font-size: 0.8rem;
+              margin-block: 1rem;
+            }
+          }
+          strong {
+            font-family: $sans;
+          }
+          ul,
+          ol {
+            margin-left: 1rem;
+          }
+          li {
+            list-style: decimal;
+            &::marker {
+              color: $brown;
+              font-family: $serif;
+              padding: 0 5px;
+            }
+          }
+          img {
+            width: 100%;
+            border-radius: 3rem;
+            margin-block: 1rem;
+            max-height: 650px;
+            object-fit: contain;
+          }
+        }
+        .post_end {
+          gap: 30%;
+          border-top: 1px solid $grey;
+          border-bottom: 1px solid $grey;
+          .cat {
+            margin-block: 1rem;
+            width: fit-content;
+            gap: 5%;
+            .button {
+              display: block;
+              width: fit-content;
+              text-align: center;
+              min-width: 110px;
+              transition: all 0.5s;
+              &:hover {
+                text-decoration: none;
+                color: $brown;
+              }
+            }
+          }
+          .socials {
+            margin-block: 1rem;
+            width: 30%;
+            min-width: 100px;
+          }
+        }
+      }
+    }
+    form {
+      margin-block: 2rem;
+      h3,
+      textarea,
+      .flex.align-center,
+      button {
+        margin-block: 1rem;
+      }
+      .grid input {
+        margin-block: 0.5rem;
+        padding: 8px 10px;
+        border: none;
+        border-bottom: 1px solid $main;
+      }
+      textarea ~ .flex.align-center {
+        gap: 1%;
+        .check {
+          position: relative;
+          .box {
+            border: 1px solid $brown;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+            &.checked {
+              background-color: $brown;
+            }
+            svg {
+              fill: white;
+            }
+          }
+          input {
+            display: none;
+          }
+        }
+        label {
+          color: $brown;
+        }
+      }
+      textarea {
+        width: 100%;
+        min-height: 200px;
+        padding: 8px 10px;
+        border: none;
+        border-bottom: 1px solid $main;
+      }
+    }
+  }
+  aside {
+    position: sticky;
+    top: 0;
+    width: 30%;
+    // min-width: 250px;
+    .search,
+    .latest,
+    .categories {
+      margin-block: 2rem;
+      h4 {
+        margin-block: 0.5rem;
+      }
+    }
+    .search {
+      background-color: $grey;
+      padding: 1rem;
+      border-radius: 3rem;
+      gap: 1%;
+      input {
+        border: none;
+        background-color: transparent;
+        color: $brown;
+        padding: 1vw;
+        width: 80%;
+        &::placeholder {
+          color: transparentize($color: $brown, $amount: 0.3);
+        }
+      }
+      svg {
+        fill: $brown;
+      }
+    }
+    .latest {
+      h4 {
+        padding-left: 1vw;
+      }
+      .item {
+        border-bottom: 1px solid $grey;
+        margin-block: 0.5rem;
+        padding: 1vw;
+        a {
+          max-width: 75%;
+          transition: all 0.5s;
+          position: relative;
+          &::after {
+            background-color: $main;
+            content: "";
+            height: 2px;
+            left: 0;
+            position: absolute;
+            transition: width 0.5s ease-out, transform 0.5s ease-out,
+              -webkit-transform 0.5s ease-out;
+            width: 0;
+          }
+          &:hover {
+            text-decoration: none;
+            &::after {
+              transform: scaleX(1);
+              width: 100%;
+            }
+          }
+        }
+        p {
+          text-align: right;
+        }
+      }
+    }
+    .categories {
+      background-color: $grey;
+      border-radius: 1rem;
+      padding: calc(1rem + 1vw);
+      ul li {
+        padding-block: 1vw;
+        border-bottom: 1px solid $brown;
+        &:nth-last-child(1) {
+          border-bottom: none;
+        }
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    main {
+      min-width: 70%;
+      #post article {
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+    aside {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    main {
+      min-width: 80%;
+    }
+    aside {
+      width: 80%;
+    }
+  }
+}
