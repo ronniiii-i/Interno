@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ThreeCircles } from "react-loader-spinner";
 import { FaChevronRight } from "react-icons/fa";
 import Banner from "../components/Banner";
@@ -9,17 +9,50 @@ import Paginate from "../components/Blog/Paginate";
 function Blog() {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(7);
+  const [postsPerPage, setPostsPerPage] = useState(6);
   const [selectedPage, setSelectedPage] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
 
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+
+  const filterData = (data) => {
+    const category = queryParams.get("category");
+    const date = queryParams.get("date");
+    const tag = queryParams.get("tag");
+
+    if (category) {
+      return data.filter((post) => post.category === category);
+    }
+
+    if (date) {
+      return data.filter((post) => post.date === date);
+    }
+
+    if (tag) {
+      return data.filter((post) => post.tags.includes(tag));
+    }
+
+    return data;
+  };
+
+  const filteredData = filterData(data);
+
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts =
+    filteredData.length > 0
+      ? filteredData.slice(indexOfFirstPost, indexOfLastPost)
+      : data.slice(indexOfFirstPost, indexOfLastPost);
 
   useEffect(() => {
-    setIsLoading(true);
-    const start = (currentPage - 1) * postsPerPage;
+    // setIsLoading(true);
+    let start;
+    if (currentPage == 1) {
+      start = (currentPage - 1) * postsPerPage;
+    } else {
+      start = ((currentPage - 1) * postsPerPage) - 1
+    }
     const end = start + postsPerPage;
     const url = `https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts?_start=${start}&_end=${end}`;
     fetch(url)
@@ -27,12 +60,12 @@ function Blog() {
       .then((data) => {
         // Sort data by date in descending order
         data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        console.log(data);
         setData(data);
         setIsLoading(false);
       })
       .catch((error) => console.error(error));
   }, [currentPage, postsPerPage]);
-  
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -53,6 +86,7 @@ function Blog() {
     }
   };
 
+  console.log(currentPosts);
   return (
     <main>
       <Banner classn="blog" title="Articles & News" name="Blog" url="/blog" />
@@ -130,21 +164,21 @@ function Blog() {
                 innerCircleColor=""
                 middleCircleColor=""
               />
+            ) : filteredData > 0 ? (
+              currentPosts.map((item) => <Card key={item.uuid} details={item} />)
             ) : (
-              currentPosts.slice(1).map((item) => (
-                // <div key={item.uuid}>
-                //   <h4>{item.post_title}</h4>
-                //   <p>{item.desc}</p>
-                // </div>
-                <Card details={item} />
-              ))
+              currentPosts.map((item) => <Card key={item.uuid} details={item} />)
+              // useEffect(() => {
+              //   setPostsPerPage(7)
+              //   currentPosts.slice(1).map((item) => <Card details={item} />)
+              // }, [currentPosts])
             )}
           </div>
         </div>
       </section>
       <Paginate
         postsPerPage={postsPerPage}
-        totalPosts={data.length}
+        totalPosts={filteredData > 0 ? currentPosts.length : data.length}
         paginate={paginate}
         previousPage={previousPage}
         nextPage={nextPage}

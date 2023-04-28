@@ -16,6 +16,7 @@ function Blog_Details() {
   const [data, setData] = useState([]);
   const [tags, setTags] = useState([]);
   const [postTitles, setPostTitles] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [postisLoading, setPostIsLoading] = useState(true);
 
@@ -33,12 +34,19 @@ function Blog_Details() {
       .catch((error) => console.error(error));
 
     const url = `https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts?_start=${0}&_end=${3}`;
+    let cats = [];
     fetch(url)
       .then((response) => response.json())
       .then((postTitles) => {
         // Sort postTitles by date in descending order
         postTitles.sort((a, b) => new Date(b.date) - new Date(a.date));
         setPostTitles(postTitles);
+        for (let i = 0; i < postTitles.length; i++) {
+          cats.push(postTitles[i].category);
+        }
+        const mySet = new Set(cats);
+        setCategories([...mySet]);
+        console.log(categories);
         setPostIsLoading(false);
       })
       .catch((error) => console.error(error));
@@ -84,12 +92,14 @@ function Blog_Details() {
                 <div className="flex align-center justify-between">
                   <a href={`/blog?date=${data.date}`}>{data.date}</a>
                   <span>
-                    {tags.map((item, index) => (
+                    {/* {tags.map((item, index) => (
                       <>
-                        <a key={item} href={`/blog?tag=${item}`}>{item}</a>
+                        <a key={item} href={`/blog?tag=${item}`}>
+                          {item}
+                        </a>
                         {index !== item.length - 1 && " / "}
                       </>
-                    ))}
+                    ))} */}
                   </span>
                 </div>
                 <div
@@ -180,7 +190,7 @@ function Blog_Details() {
               />
             ) : (
               postTitles.slice(0, 3).map((item) => (
-                <div className="item">
+                <div key={item.uuid} className="item">
                   <a href={`/blog/${item.slug}`}>
                     <h5>{item.post_title}</h5>
                   </a>
@@ -192,18 +202,11 @@ function Blog_Details() {
           <div className="categories">
             <h4>Categories</h4>
             <ul>
-              <li>
-                <a href={`/blog?category=bedroom`}>Bedroom</a>
-              </li>
-              <li>
-                <a href={`/blog?category=home decor`}>Home Decor</a>
-              </li>
-              <li>
-                <a href={`/blog?category=living-room`}>Living Room</a>
-              </li>
-              <li>
-                <a href={`/blog?category=kitchen`}>Kitchen</a>
-              </li>
+              {categories.map((item) => (
+                <li key={item}>
+                  <a href={`/blog?category=${item}`}>{item}</a>
+                </li>
+              ))}
             </ul>
           </div>
         </aside>
