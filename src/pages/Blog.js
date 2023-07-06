@@ -91,7 +91,7 @@ function Blog() {
     <main>
       <Banner classn="blog" title="Articles & News" name="Blog" url="/blog" />
 
-      <section id="latest">
+       <section id="latest">
         <div className="inner">
           <h2>Latest Post</h2>
 
