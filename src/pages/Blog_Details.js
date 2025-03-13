@@ -33,7 +33,7 @@ function Blog_Details() {
       })
       .catch((error) => console.error(error));
 
-    const url = `https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts?_start=${0}&_end=${3}`;
+    const url = `https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts`;
     let cats = [];
     fetch(url)
       .then((response) => response.json())
