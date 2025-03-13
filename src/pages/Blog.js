@@ -54,7 +54,7 @@ function Blog() {
       start = ((currentPage - 1) * postsPerPage) - 1
     }
     const end = start + postsPerPage;
-    const url = `https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts?_start=${start}&_end=${end}`;
+    const url = `https://6442fd8d90738aa7c069d524.mockapi.io/api/v1/blogposts`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
